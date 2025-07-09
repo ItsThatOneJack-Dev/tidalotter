@@ -12,3 +12,4 @@ wheels/
 main.build
 main.dist
 main.onefile-build
+dist
