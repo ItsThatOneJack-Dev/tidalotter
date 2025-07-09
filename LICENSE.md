@@ -1,11 +1,11 @@
-# 🏳️‍🌈 Opinionated Queer License v1.2
+# 🏳️‍🌈 Opinionated Queer License v1.2 (Sharealike)
 
 © Copyright [ItsThatOneJack](https://itoj.dev)
 
 ## Permissions
 
-The creators of this Work (“The Licensor”) grant permission
-to any person, group or legal entity that doesn't violate the prohibitions below (“The User”),
+The creators of this Work ("The Licensor") grant permission
+to any person, group or legal entity that doesn't violate the prohibitions below ("The User"),
 to do everything with this Work that would otherwise infringe their copyright or any patent claims,
 subject to the following conditions:
 
@@ -17,6 +17,16 @@ provide a copy of this license or a (clickable, if the medium allows) link to
 and indicate whether and what kind of changes were made.
 The User may do so in any reasonable manner,
 but not in any way that suggests the Licensor endorses the User or their use.
+
+## Sharealike Requirement
+
+Any derivative work, modification, or adaptation of this Work must be licensed under the identical terms of this license. This includes but is not limited to:
+
+- Modified versions of the Work
+- Works that incorporate substantial portions of this Work
+- Works that are based upon or derived from this Work
+
+The User may not apply additional restrictions or permissions that contradict or circumvent the terms of this license to any derivative work.
 
 ## Prohibitions
 
@@ -52,6 +62,6 @@ If they do not do so, their license ends immediately.
 
 ## Warranty
 
-This Work is provided “as is”, without warranty of any kind, express or implied.
+This Work is provided "as is", without warranty of any kind, express or implied.
 The Licensor will not be liable to anyone for any damages related to the Work or this license,
 under any kind of legal claim as far as the law allows.

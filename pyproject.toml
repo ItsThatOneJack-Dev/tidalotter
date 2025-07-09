@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tidalotter"
-version = "1.0.1"
+version = "1.2.0"
 description = "A TIDAL download CLI, using Otter LLC's API."
 readme = "README.md"
 license = { file = "LICENSE.md" }
