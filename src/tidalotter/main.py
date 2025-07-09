@@ -142,7 +142,7 @@ def downloadTrack(query:str, location:str, quality:str, timeout:int=10) -> None:
     Returns:
         None
     """
-    if quality.lower() not in ["LOSSLESS","HIGH","LOW"]:raise ValueError(f"quality must be one of: 'LOSSLESS', 'HIGH', 'LOW'!")
+    if quality.upper() not in ["LOSSLESS","HIGH","LOW"]:raise ValueError(f"quality must be one of: 'LOSSLESS', 'HIGH', 'LOW'!")
     url = f"https://otter.llc/{quote(query)}?download=1&format={'m4a' if quality in ['LOW','HIGH'] else 'flac'}&quality={quality.upper()}"
     downloadfile(url, location, timeout)
 
