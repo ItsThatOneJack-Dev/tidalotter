@@ -4,10 +4,10 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tidalotter"
-version = "1.0.0"
+version = "1.0.1"
 description = "A TIDAL download CLI, using Otter LLC's API."
 readme = "README.md"
-license = { file = "LICENSE" }
+license = { file = "LICENSE.md" }
 authors = [{ name = "ItsThatOneJack", email = "jack@itoj.dev" }]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -33,7 +33,4 @@ Issues = "https://github.com/ItsThatOneJack-Dev/tidalotter/issues"
 tidalotter = "tidalotter.main:main"
 
 [dependency-groups]
-dev = [
-    "build>=1.2.2.post1",
-    "twine>=6.1.0",
-]
+dev = ["build>=1.2.2.post1", "twine>=6.1.0"]

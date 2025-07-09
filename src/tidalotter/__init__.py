@@ -1,5 +1,5 @@
 """
-A download client for everyone.
+The easy TIDAL download client!
 """
 
 try:
@@ -10,6 +10,6 @@ except ImportError:
 __author__ = "ItsThatOneJack"
 __email__ = "jack@itoj.dev"
 
-from .main import main, downloadfile
+from .main import downloadTrack
 
-__all__ = ["main", "downloadfile"]
+__all__ = ["downloadTrack"]

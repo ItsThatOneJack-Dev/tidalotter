@@ -128,6 +128,24 @@ def helppage(console):
     console.print("    [bold]▪[/bold] Providing no arguments will result in this help page being displayed.")
     console.print("    [bold]▪[/bold] Providing no location will result in the file being stored within your current working directory.")
 
+def downloadTrack(query:str, location:str, quality:str, timeout:int=10) -> None:
+    """Download a track from TIDAL, as the file `location`, with quality `quality`.
+
+    You are expected to validate your inputs prior to calling this function.
+
+    Arguments:
+        query:str - The query string to use to find the track.
+        location:str - The filename (or directory) to save the track as.
+        quality:str - The quality ("LOSSLESS", "HIGH" or "LOW") to use.
+        timeout:int - The maximum number of seconds to wait before timing out and erroring.
+
+    Returns:
+        None
+    """
+    if quality.lower() not in ["LOSSLESS","HIGH","LOW"]:raise ValueError(f"quality must be one of: 'LOSSLESS', 'HIGH', 'LOW'!")
+    url = f"https://otter.llc/{quote(query)}?download=1&format={'m4a' if quality in ['LOW','HIGH'] else 'flac'}&quality={quality.upper()}"
+    downloadfile(url, location, timeout)
+
 def main():
     console = Console()
 
@@ -203,8 +221,7 @@ def main():
             console.print(f"[red][bold] \\[ERROR][/bold] Location includes a non-existent directory!")
             exit(1)
 
-    url = f"https://otter.llc/{quote(query)}?download=1&format={'m4a' if quality in ['LOW','HIGH'] else 'flac'}&quality={quality}"
-    downloadfile(url, location, 10)
+    downloadTrack(query,location,quality,10)
 
 if __name__ == "__main__":
     main()

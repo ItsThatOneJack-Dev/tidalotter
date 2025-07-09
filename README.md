@@ -1,8 +1,9 @@
 # TidalOtter
 
-TidalOtter is a CLI (Command Line Interface) for Otter LLC (oterin)'s TIDAL download API.
+TidalOtter, the easy TIDAL download client!
 
-TidalOtter provides an easy way to download music as either FLAC files, or M4A files!
+TidalOtter is a CLI (Command Line Interface) for Otter LLC (oterin)'s TIDAL download API.
+It provides an easy way to download music as either FLAC files, or M4A files!
 
 ## Usage
 
