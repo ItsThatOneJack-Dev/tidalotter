@@ -105,7 +105,7 @@ def helppage(console):
     console.print("[bold](C) ItsThatOneJack")
     console.print("==================")
     console.print("[bold]Syntax:")
-    console.print("    [bold]▪[/bold] tidalotter [query] <location> <flags>")
+    console.print("    [bold]▪[/bold] tidalotter <query> \\[location] \\[flags]")
     console.print("")
     console.print("[bold]Examples:")
     console.print("    [bold]▪[/bold] tidalotter \"Affection Addiction\"")
