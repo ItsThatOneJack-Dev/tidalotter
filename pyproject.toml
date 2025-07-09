@@ -1,6 +1,10 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "tidalotter"
-version = "0.1.0"
+version = "1.0.0"
 description = "A TIDAL download CLI, using Otter LLC's API."
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -21,9 +25,15 @@ requires-python = ">=3.12"
 dependencies = ["requests>=2.32.4", "rich>=14.0.0"]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/your-package"
-Repository = "https://github.com/yourusername/your-package"
-Issues = "https://github.com/yourusername/your-package/issues"
+Homepage = "https://github.com/ItsThatOneJack-Dev/tidalotter"
+Repository = "https://github.com/ItsThatOneJack-Dev/tidalotter"
+Issues = "https://github.com/ItsThatOneJack-Dev/tidalotter/issues"
 
 [project.scripts]
-tidalotter = "your_package.main:main"
+tidalotter = "tidalotter.main:main"
+
+[dependency-groups]
+dev = [
+    "build>=1.2.2.post1",
+    "twine>=6.1.0",
+]
